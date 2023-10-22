@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyShop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Myshop</h2>
+
+      <div id="badge-and-basket-container">
+        <div id="badge">0</div>
+        <div id="basket-icon-container">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="products-list">
+      <div class="product product-header">
+        <span>Id </span><span>Name</span><span>Price</span>
+        <span>Add</span>
+      </div>
+    </div>
+
+    <div id="basket-list" class="basket list hidden">
+      <div class="head-basket-list">
+        <h3>Your basket</h3>
+        <div>
+          <button id="empty-basket-btn" class="circular-btn">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+          <button id="exit-btn" class="circular-btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
